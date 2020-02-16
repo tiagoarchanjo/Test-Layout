@@ -24,7 +24,7 @@
           <span class="navbar-toggler-icon mr-auto"></span>
 
         </button>
-        <a class="navbar-brand ml-auto" href="#"><img src="./img/Vector-1.png"><img src="./img/vector.png"></a>
+        <a class="navbar-brand ml-auto" href="#"><img src="./img/LogoBrand.png"></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="search-form mx-auto">
@@ -39,6 +39,9 @@
               <a class="nav-link" href="..."><i class="fas fa-shopping-cart"></i><span class="badge">3</span>
               </a>
             </li>
+
+            <span class="cr cv cw"></span>
+
             <li class="nav-item">
               <a class="nav-link" href="..."><span class="flag-icon flag-icon-br"> </span> </a>
             </li> 
@@ -56,80 +59,41 @@
       </div>
     </nav>
      
- <!-----------CAROUSEL 1------------------------------------------------------------>
+ <!----------- banner 1------------------------------------------------------------>
 
-    <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-      <div class="carousel-inner">
+ <div class="flex-grid-thirds">
+  <div class="col-md-6">
+  <div><span>Selecione sua localiza&ccedil;&atilde;o</span></div>  
 
-      <div class="carousel-item py-5 active">
-      <div class="row">
-      <div class="col-md-6 col-sm-6"><a href="#"><img src="./img/imageBanner.png" class="img-responsive" alt="Responsive image"></a>
-      <div class="carousel-caption">
-        <p class="top-and-bottom">Nossa especialidade: 
-          experi&ecirc;ncia de compra.</p>
-              </div>
-      </div>
-      <div class="col-md-6 col-sm-6 first"><a href="#"  class="img-responsive"alt="Responsive image"></a></div>
-      </div>
-      </div>
-      
-      <div class="carousel-item py-5">
-        <div class="row">
-        <div class="col-md-6 col-sm-6 "><a href="#"><img src="./img/imageBanner.png"  class="img-responsive" alt="Responsive image"></a>
-        <div class="carousel-caption">
-        <p class="top-and-bottom">Nossa especialidade: 
-                     experi&ecirc;ncia de compra.</p>
-        </div>
-        </div>
-        <div class="col-sm-6 col-sm-6 first"><a href="#" class="img-responsive" alt="Responsive image"></a></div>
-        </div>
-        </div>
+    <label for="estado">Estado:&ensp;</label>
 
-        <div class="carousel-item py-5">
-          <div class="row">
-          <div class="col-sm-6"><a href="#"><img src="./img/imageBanner.png"  class="img-responsive" alt="Responsive image"></a>
-          <div class="carousel-caption">
-          <p class="top-and-bottom">Nossa especialidade: 
-            experi&ecirc;ncia de compra.</p>   
-                 </div>
-          </div>
-          <div class="col-sm-6 first"><a href="#" class="img-responsive" alt="Responsive image"></a></div>
-          </div>
-          </div>
+  <select id="estado" onchange="buscaCidades(this.value)">
+     <option value="">Selecionar</option>
+     <option value="AC">Acre</option>
+     <option value="AL">Alagoas</option>
+  </select>
+  <br />
+    <label for="cidade">Cidade:&ensp;</label>
+   <select id="cidade">
+     <option value="">Selecionar</option>
+  </select>
 
-         <div class="carousel-item py-5">
-        <div class="row">
-        <div class="col-sm-6"><a href="#"><img src="./img/imageBanner.png"  class="img-responsive" alt="Responsive image"></a>
-        <div class="carousel-caption">
-        <p class="top-and-bottom">Nossa especialidade: 
-          experi&ecirc;ncia de compra.</p>
-                </div>
-        </div>
-        <div class="col-sm-6 first"><a href="#" class="img-responsive" alt="Responsive image"></a></div>
-        </div>
-        </div>
-      </div> 
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-</div>
- <!-- END CAROUSEL 1------------------------------------------------------>
+   
+  </div>  
+
+  <div class="col-md-6">
+
+  <img src="./img/alagoas.jpg" id="myimage"> 
+     </div>
+  </div>
+
+   <!-- END Banner  1------------------------------------------------------>
+
 
 <!--CAROUSEL 2---------------------------------------------------------->
 <section class="carousel-2">
  <div class="text1"><h4>Produtos</h4></div>
-   	<div id="carousel-1" class="carousel slide w-100" data-ride="carousel">
+   	<div id="carousel-1" class="carousel">
      <div class="carousel-inner">
       <div class="carousel-item active">
            <div class="row">
@@ -450,20 +414,20 @@
 <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-2 col-xs-3 segment-one">
+        <div class="col-md-4 col-xs-3 segment-one">
           <h6>Localiza&ccedil;&atilde;o</h6>
           <span class="text-justify">S&atilde;o Paulo
+          <br /></span>
+      <span>Rua do R&oacute;cio, 423/1801 </span>
           <br />
-          Rua do R&oacute;cio, 423/1801 
-          <br />
-           Vila Ol&iacute;mpia - SP
+        <span>Vila Ol&iacute;mpia - SP</span>
            <br />
-          04552-000
+         <span>04552-000</span>
           <br />
-           +55 11 3333 3333
-      </span>
-      </div>
+         <span>+55 11 3333 3333</span>
+       </div>
 
+      <!-----------------------------------------------------------
         <div class="col-md-3 col-xs-3 segment-two">
           <span class="text-justify">Rio de Janeiro
             <br />
@@ -475,16 +439,16 @@
           <br />
           +55 11 3333 3333
          </span>
-        </div>
+        </div>-->
 
-        <div class="col-md-4 col-xs-3 segment-three">
-          <p><a href="#" class="button1">Entre em contato</a></p>
-        <p><a href="#" class="button2">Fale com o nosso<br/>consultor on-line</a></p>
+        <div class="col-md-4 col-xs-3 segment-three my-4">
+          <p><a href="#" class="button1"><i class="fas fa-envelope fa-fw fa-fw"></i>Entre em contato</a></p>
+        <p><a href="#" class="button2"><i class="fas fa-headset fa-fw fa-fw"></i>Fale com o nosso<br/>&emsp;&ensp;consultor on-line</a></p>
 
         </div>
-        <div class="col-md-3 col-xs-3 segment-four text-center">
-          <span class="text11">Created by</span>
-          <span class="text12">Powered by</span>
+        <div class="col-md-4 col-xs-3 segment-four">
+          <span class="text11"> <img src="./img/Layer 2.png" alt="image"></span>
+          <span class="text12"><img src="./img/Group 2.png" alt="image"></span>
       </div>
      </div>
     </div>
@@ -492,11 +456,16 @@
 
 
 
-
+<script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
  
- 
-  </body>
+    
+    <script src="./Js/main.js"></script>
+   </body>
    </html>
